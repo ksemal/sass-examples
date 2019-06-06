@@ -1,0 +1,42 @@
+h1.title {
+  font: normal 24px/1.5 "Open Sans", sans-serif;
+  color: #45a3afc5; }
+
+div.topics {
+  background: #acacac7a;
+  width: 30%;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  float: left;
+  height: 200px;
+  margin: 5px;
+  border: 5px solid rgba(128, 128, 128, 0.24); }
+
+.small-blue-square {
+  width: 20px;
+  height: 20px;
+  background-color: #87bae1;
+  float: left;
+  margin: 5px; }
+
+.big-red-square {
+  width: 120px;
+  height: 120px;
+  background-color: #e4749e;
+  float: left;
+  margin: 5px; }
+
+.dialog-button, .confirm, .cancel {
+  box-sizing: border-box;
+  color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  padding: 12px 40px;
+  cursor: pointer; }
+
+.confirm {
+  background-color: #87bae1;
+  float: left; }
+
+.cancel {
+  background-color: #e4749e;
+  float: right; }

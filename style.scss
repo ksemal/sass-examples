@@ -1,0 +1,59 @@
+//Variables
+
+$title-font: normal 24px/1.5 "Open Sans", sans-serif;
+$cool-green: #45a3afc5;
+$box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+
+h1.title {
+  font: $title-font;
+  color: $cool-green;
+}
+
+div.topics {
+  background: #acacac7a;
+  width: 30%;
+  box-shadow: $box-shadow-bottom-only;
+  padding: 20px;
+  float: left;
+  height: 200px;
+  margin: 5px;
+  border: 5px solid rgba(128, 128, 128, 0.24);
+}
+
+//Mixin
+@mixin square($size, $color) {
+  width: $size;
+  height: $size;
+  background-color: $color;
+  float: left;
+  margin: 5px;
+}
+
+.small-blue-square {
+  @include square(20px, #87bae1);
+}
+
+.big-red-square {
+  @include square(120px, #e4749e);
+}
+
+//Extend
+.dialog-button {
+  box-sizing: border-box;
+  color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  padding: 12px 40px;
+  cursor: pointer;
+}
+
+.confirm {
+  @extend .dialog-button;
+  background-color: #87bae1;
+  float: left;
+}
+
+.cancel {
+  @extend .dialog-button;
+  background-color: #e4749e;
+  float: right;
+}

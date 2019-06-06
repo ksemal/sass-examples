@@ -1,6 +1,7 @@
 h1.title {
   font: normal 24px/1.5 "Open Sans", sans-serif;
-  color: #45a3afc5; }
+  color: #45a3afc5;
+  font-family: Georgia, "Times New Roman", Times, serif; }
 
 div.topics {
   background: #acacac7a;

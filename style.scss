@@ -58,3 +58,57 @@ div.topics {
   background-color: #e4749e;
   float: right;
 }
+
+//Nesting
+
+ul {
+  list-style: none;
+
+  li {
+    padding: 15px;
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #444;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+//Operations
+
+$width: 600px;
+$color-rose: rgb(79, 190, 148);
+$height: 50px;
+
+.container {
+  width: $width;
+  height: $height;
+}
+
+.column-half {
+  width: $width / 2;
+  background-color: $color-rose;
+  height: $height;
+  margin: 5px;
+}
+
+.column-fifth {
+  width: $width / 5;
+  background-color: $color-rose;
+  height: $height;
+}
+
+//Functions
+$awesome-blue: #2196f3;
+a.link {
+  padding: 10px 15px;
+  background-color: $awesome-blue;
+}
+
+a.link:hover {
+  background-color: darken($awesome-blue, 10%);
+}
